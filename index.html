@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Scary Places</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div>
+          <a href="index.html"><img class="logo" src="img/scary-places-logo.png" alt="Scary Places"></a>
+        </div>
+        <nav id="navbar">
+          <input type="checkbox" id="check" onClick="disableScroll()">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul class="nav-links">
+            <li><a onclick="uncheck(), enableScroll()" href="#navbar">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="scary.html">Near Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="home-hero">
+      <div class="home-container">
+        <h1>Find Scary Places Near You</h1>
+        <a href="scary.html" class="button">I'm Ready</a>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="about-container">
+        <div class="col">
+          <i class="fas fa-search-location margin-left"></i>
+          <h3>Search</h3>
+          <p class="about-text">Discover scary places from all over the world or simply near you.</p>
+        </div>
+        <div class="col">
+          <i class="fas fa-book-reader"></i>
+          <h3>Read</h3>
+          <p class="about-text">Learn the history behind these scary places by visiting our blog.</p>
+        </div>
+        <div class="col">
+          <i class="fas fa-share"></i>
+          <h3>Share</h3>
+          <p class="about-text">Share your experience with us on instagram by using #scaryplaces.</p>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+      <h2>Visit Our Blog!</h2>
+      <div class="blog-container">
+        <div class="box">
+          <a href="#">
+            <img src="img/the-queen-mary.jpg" alt="The Queen Mary" class="blog-img">
+          </a>
+          <div class="img-caption">The Queen Mary</div>
+        </div>
+        <div class="box">
+          <a href="#">
+            <img src="img/the-catacombs.jpg" alt="Catacombs" class="blog-img">
+          </a>
+          <div class="img-caption">Catacombs of Paris</div>
+        </div>
+        <div class="box">
+          <a href="#">
+            <img src="img/chernobyl.jpg" alt="Chernobyl" class="blog-img">
+          </a>
+          <div class="img-caption">Chernobyl</div>
+        </div>
+        <div class="box">
+          <a href="#">
+            <img src="img/suicide-forest.jpg" alt="Suicide Forest" class="blog-img">
+          </a>
+          <div class="img-caption">Suicide Forest</div>
+        </div>
+      </div>
+    </section>
+    <section id="social">
+      <h2>Follow Us <span class="red-social-tag">@ScaryPlaces_</span></h2>
+      <div class='social-container'>
+        <ul class='carousel is-set'>
+          <li class='carousel-seat'>
+            <img src="img/the-queen-mary.jpg" alt="The Queen Mary" class="carousel-img">
+          </li>
+          <li class='carousel-seat'>
+            <img src="img/the-catacombs.jpg" alt="Catacombs" class="carousel-img">
+          </li>
+          <li class='carousel-seat'>
+            <img src="img/chernobyl.jpg" alt="Chernobyl" class="carousel-img">
+          </li>
+          <li class='carousel-seat'>
+            <img src="img/suicide-forest.jpg" alt="Suicide Forest" class="carousel-img">
+          </li>
+          <li class='carousel-seat'>
+            <img src="img/alcatraz.jpg" alt="Alcatraz" class="carousel-img">
+          </li>
+          <li class='carousel-seat is-ref'>
+            <img src="img/willard-asylum.jpg" alt="Willard Asylum" class="carousel-img">
+          </li>
+        </ul>
+      </div>
+      <div class='controls'>
+        <button class='toggle' data-toggle='prev'>Prev</button>
+        <button class='toggle' data-toggle='next'>Next</button>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="flex-column">
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="scary.html">Near Me</a></li>
+          </ul>
+        </div>
+        <div class="flex-form">
+          <p class="footer-txt">Subscribe to stay updated on the latest scary places and blog posts.</p>
+          <div class="flex-row">
+            <input class="email-input" type="email" name="email" placeholder="Email">
+            <div class="submit-button">Subscribe</div>
+          </div>
+        </div>
+        <div class="social-links">
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/scaryplaces_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© 2021 <a href="index.html">Scary Places.</a> All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

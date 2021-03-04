@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Scary Places</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div>
+          <a href="index.html"><img class="logo" src="img/scary-places-logo.png" alt="Scary Places"></a>
+        </div>
+        <nav id="navbar">
+          <input type="checkbox" id="check" onClick="disableScroll()">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul class="nav-links">
+            <li><a onclick="uncheck(), enableScroll()" href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="scary.html">Near Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="contact-page">
+      <div class="contact-wrapper">
+        <h1 class="heading">Contact Us</h1>
+        <div class="form">
+          <div class="top-form">
+            <div class="inner-form">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="inner-form">
+              <input type="text" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="bottom-form">
+            <div class="inner-form">
+              <textarea placeholder="How may we help?"></textarea>
+            </div>
+          </div>
+          <div class="submit-form-button">Submit</div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="flex-column">
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="scary.html">Near Me</a></li>
+          </ul>
+        </div>
+        <div class="flex-form">
+          <p class="footer-txt">Sign up to recive the latest news and updates from us.</p>
+          <div class="flex-row">
+            <input class="email-input" type="email" name="email" placeholder="Email">
+            <div class="submit-button">Submit</div>
+          </div>
+        </div>
+        <div class="social-links">
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/scaryplaces_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© 2021 <a href="index.html">Scary Places.</a> All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
